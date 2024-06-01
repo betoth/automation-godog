@@ -1,0 +1,17 @@
+# Binaries
+/bin/
+/cmd/automation-godog/automation-godog
+
+# Configuration files
+/configs/config.yaml
+
+# Vendor directory
+/vendor/
+
+# IDE specific files
+/.idea/
+/.vscode/
+
+# Logs
+/logs/
+*.log
