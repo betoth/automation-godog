@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	_ "github.com/betoth/automation-godog/tests/steps"
-	"github.com/betoth/automation-godog/tests/support"
+	_ "github.com/betoth/automation-godog/internal/steps"
+	"github.com/betoth/automation-godog/internal/support"
 
 	"github.com/cucumber/godog"
 	"github.com/cucumber/godog/colors"
@@ -35,7 +35,7 @@ func TestMain(m *testing.M) {
 	}.Run()
 
 	// Configuração para gerar o arquivo JSON
-	jsonFile, err := os.Create("cucumber_report.json")
+	jsonFile, err := os.Create("reports/cucumber_report.json")
 	if err != nil {
 		panic(err)
 	}

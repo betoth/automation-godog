@@ -1,7 +1,7 @@
 package steps
 
 import (
-	"github.com/betoth/automation-godog/tests/support"
+	"github.com/betoth/automation-godog/internal/support"
 
 	"github.com/cucumber/godog"
 )

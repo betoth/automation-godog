@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"path/filepath"
 	"time"
 )
 
@@ -45,13 +46,19 @@ type Feature struct {
 	Elements []Element `json:"elements"`
 }
 
-type Report struct {
-	Features []Feature `json:"features"`
-}
-
 func main() {
+	// Defina o caminho para o relatório JSON
+	reportPath := "reports/cucumber_report.json"
+
+	// Verifique se o diretório existe, se não, crie-o
+	if _, err := os.Stat(filepath.Dir(reportPath)); os.IsNotExist(err) {
+		if err := os.MkdirAll(filepath.Dir(reportPath), os.ModePerm); err != nil {
+			log.Fatalf("Failed to create directory: %s", err)
+		}
+	}
+
 	// Lê o arquivo JSON gerado pelo Godog
-	jsonFile, err := os.Open("cucumber_report.json")
+	jsonFile, err := os.Open(reportPath)
 	if err != nil {
 		log.Fatalf("Failed to open JSON file: %s", err)
 	}
@@ -59,8 +66,8 @@ func main() {
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
 
-	var report Report
-	err = json.Unmarshal(byteValue, &report)
+	var features []Feature
+	err = json.Unmarshal(byteValue, &features)
 	if err != nil {
 		log.Fatalf("Failed to unmarshal JSON: %s", err)
 	}
@@ -230,7 +237,7 @@ func main() {
 </html>
 `
 
-	featuresJSON, err := json.Marshal(report.Features)
+	featuresJSON, err := json.Marshal(features)
 	if err != nil {
 		log.Fatalf("Failed to marshal features: %s", err)
 	}
@@ -241,7 +248,7 @@ func main() {
 		FeaturesJSON template.JS
 	}{
 		GeneratedAt:  time.Now().Format("January 2, 2006 at 3:04pm"),
-		Features:     report.Features,
+		Features:     features,
 		FeaturesJSON: template.JS(featuresJSON),
 	}
 
@@ -250,7 +257,7 @@ func main() {
 		log.Fatalf("Failed to parse template: %s", err)
 	}
 
-	reportFile, err := os.Create("final_report.html")
+	reportFile, err := os.Create("reports/final_report.html")
 	if err != nil {
 		log.Fatalf("Failed to create HTML file: %s", err)
 	}
