@@ -1,0 +1,170 @@
+[
+    {
+        "uri": "features/example.feature",
+        "id": "example-feature",
+        "keyword": "Feature",
+        "name": "Example feature",
+        "description": "  In order to test BDD with Godog\n  As a developer\n  I want to run scenarios with Godog",
+        "line": 1,
+        "elements": [
+            {
+                "id": "example-feature;example-scenario",
+                "keyword": "Scenario",
+                "name": "Example scenario",
+                "description": "",
+                "line": 6,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "a cachorro",
+                        "line": 7,
+                        "match": {
+                            "location": "example_steps.go:11"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 38775
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "an action is performed",
+                        "line": 8,
+                        "match": {
+                            "location": "example_steps.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 54267
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "an outcome is expected",
+                        "line": 9,
+                        "match": {
+                            "location": "example_steps.go:21"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 18700
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "uri": "features/example2.feature",
+        "id": "example-feature-2",
+        "keyword": "Feature",
+        "name": "Example feature 2",
+        "description": "  In order to test BDD with Godog\n  As a developer\n  I want to run more scenarios with Godog",
+        "line": 1,
+        "elements": [
+            {
+                "id": "example-feature-2;example-scenario-2",
+                "keyword": "Scenario",
+                "name": "Example scenario 2",
+                "description": "",
+                "line": 6,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "another precondition",
+                        "line": 7,
+                        "match": {
+                            "location": "example2_steps.go:10"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 38866
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "another action is performed",
+                        "line": 8,
+                        "match": {
+                            "location": "example2_steps.go:15"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 35842
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "another outcome is expected",
+                        "line": 9,
+                        "match": {
+                            "location": "example2_steps.go:20"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 21358
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "uri": "features/example3.feature",
+        "id": "example-feature-3",
+        "keyword": "Feature",
+        "name": "Example feature 3",
+        "description": "  In order to test BDD with Godog\n  As a developer\n  I want to run even more scenarios with Godog",
+        "line": 1,
+        "elements": [
+            {
+                "id": "example-feature-3;example-scenario-3",
+                "keyword": "Scenario",
+                "name": "Example scenario 3",
+                "description": "",
+                "line": 6,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "yet another precondition",
+                        "line": 7,
+                        "match": {
+                            "location": "example3_steps.go:9"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 56925
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "yet another action is performed",
+                        "line": 8,
+                        "match": {
+                            "location": "example3_steps.go:14"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 35016
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "yet another outcome is expected",
+                        "line": 9,
+                        "match": {
+                            "location": "example3_steps.go:19"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 68384
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

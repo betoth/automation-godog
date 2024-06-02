@@ -4,6 +4,6 @@ Feature: Example feature
   I want to run scenarios with Godog
 
   Scenario: Example scenario
-    Given a precondition
+    Given a cachorro
     When an action is performed
     Then an outcome is expected
