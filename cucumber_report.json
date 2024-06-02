@@ -24,7 +24,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 38775
+                            "duration": 24291
                         }
                     },
                     {
@@ -36,7 +36,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 54267
+                            "duration": 22367
                         }
                     },
                     {
@@ -48,7 +48,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 18700
+                            "duration": 20075
                         }
                     }
                 ]
@@ -80,7 +80,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 38866
+                            "duration": 18884
                         }
                     },
                     {
@@ -92,7 +92,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 35842
+                            "duration": 19525
                         }
                     },
                     {
@@ -104,7 +104,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 21358
+                            "duration": 21633
                         }
                     }
                 ]
@@ -136,7 +136,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 56925
+                            "duration": 24933
                         }
                     },
                     {
@@ -148,7 +148,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 35016
+                            "duration": 26400
                         }
                     },
                     {
@@ -160,7 +160,155 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 68384
+                            "duration": 24292
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "uri": "features/example_scenario_outline.feature",
+        "id": "example-scenario-outline-feature",
+        "keyword": "Feature",
+        "name": "Example scenario outline feature",
+        "description": "  In order to test BDD with Godog\n  As a developer\n  I want to run scenarios with different sets of data",
+        "line": 1,
+        "elements": [
+            {
+                "id": "example-scenario-outline-feature;example-scenario-outline;;2",
+                "keyword": "Scenario Outline",
+                "name": "Example scenario outline",
+                "description": "",
+                "line": 13,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "a precondition with 1",
+                        "line": 13,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:12"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 43817
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "an action is performed with 1",
+                        "line": 13,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 117333
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "the outcome should be success",
+                        "line": 13,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:19"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 51700
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "example-scenario-outline-feature;example-scenario-outline;;3",
+                "keyword": "Scenario Outline",
+                "name": "Example scenario outline",
+                "description": "",
+                "line": 14,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "a precondition with 2",
+                        "line": 14,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:12"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 46200
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "an action is performed with 2",
+                        "line": 14,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 49775
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "the outcome should be success",
+                        "line": 14,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:19"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 49317
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "example-scenario-outline-feature;example-scenario-outline;;4",
+                "keyword": "Scenario Outline",
+                "name": "Example scenario outline",
+                "description": "",
+                "line": 15,
+                "type": "scenario",
+                "steps": [
+                    {
+                        "keyword": "Given ",
+                        "name": "a precondition with 3",
+                        "line": 15,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:12"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 30067
+                        }
+                    },
+                    {
+                        "keyword": "When ",
+                        "name": "an action is performed with 3",
+                        "line": 15,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:16"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 41341
+                        }
+                    },
+                    {
+                        "keyword": "Then ",
+                        "name": "the outcome should be failure",
+                        "line": 15,
+                        "match": {
+                            "location": "example_scenario_outline_steps.go:19"
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 24384
                         }
                     }
                 ]

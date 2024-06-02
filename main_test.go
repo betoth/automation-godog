@@ -13,7 +13,7 @@ import (
 )
 
 func InitializeScenario(ctx *godog.ScenarioContext) {
-	fmt.Println("Initializing scenario in main_test.go")
+
 	support.InitializeScenarios(ctx)
 }
 
